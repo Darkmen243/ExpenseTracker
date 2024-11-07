@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/transactionListFragment">
+
+    <fragment
+        android:id="@+id/transactionListFragment"
+        android:name="com.example.expensetracker.TransactionListFragment"
+        tools:layout="@layout/fragment_transaction_list" />
+
+    <activity
+        android:id="@+id/addTransactionActivity"
+        android:name="com.example.expensetracker.AddTransactionActivity"
+        android:label="Add Transaction"
+        tools:layout="@layout/activity_add_transaction" />
+    <fragment
+        android:id="@+id/StatisticsFragment"
+        android:name="com.example.expensetracker.StatisticsFragment"
+        android:label="Statistics"
+        tools:layout="@layout/fragment_statistics"/>
+    <action
+        android:id="@+id/action_transactionListFragment_to_statisticsFragment"
+        app:destination="@id/StatisticsFragment" />
+    <action
+        android:id="@+id/action_statisticsFragment_to_transactionListFragment"
+        app:destination="@id/transactionListFragment" />
+</navigation>

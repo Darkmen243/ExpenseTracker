@@ -1,0 +1,22 @@
+<resources>
+        <string name="app_name">Expense Tracker</string>
+    <string name="add_transaction">Add Transaction</string>
+    <string name="description">description</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="show_transactions">Show Transactions</string>
+    <string name="save">Save</string>
+    <string name="amount">Amount</string>
+    <string name="title">Title</string>
+    <string name="show_statistics">Show Statistics</string>
+    <string name="date">Date</string>
+    <string name="save_transaction">Save Transaction</string>
+    <string name="set_monthly_spending_limit">Set Monthly Spending Limit</string>
+    <string name="enter_limit_amount">Enter limit amount</string>
+    <string name="save_limit">Save Limit</string>
+    <string-array name="date_filters">
+        <item>Day</item>
+        <item>Week</item>
+        <item>Month</item>
+    </string-array>
+</resources>

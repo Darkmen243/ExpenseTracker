@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pieChart"
+        android:layout_width="match_parent"
+        android:layout_height="635dp"
+        android:layout_below="@id/spinnerTimePeriod"
+        android:layout_marginTop="39dp" />
+
+    <Spinner
+        android:id="@+id/spinnerTimePeriod"
+        android:layout_width="199dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="16dp"
+        android:entries="@array/date_filters"
+        android:translationX="200dp"
+        android:translationY="35dp" />
+
+    <Button
+        android:id="@+id/btnShowTransactionList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show_transactions" />
+
+</RelativeLayout>
